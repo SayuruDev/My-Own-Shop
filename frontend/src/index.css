@@ -1,0 +1,18 @@
+.navBar {
+  background-color: rgb(135, 161, 170);
+  padding: 5px;
+}
+
+.navBar ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.navBar li {
+  cursor: pointer;
+}
+
+.navBar li:hover {
+  color: red;
+}
