@@ -16,3 +16,21 @@
 .navBar li:hover {
   color: red;
 }
+
+.navBar ::highlight{
+    color: plum;
+
+}
+
+.loginButton:hover {
+  color: plum;
+}
+
+.loginButton{
+  margin-left: 2000px;
+}
+
+.registerSubmit{
+    background-color: rgb(255, 0, 234);
+
+}
