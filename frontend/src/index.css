@@ -16,3 +16,8 @@
 .navBar li:hover {
   color: red;
 }
+
+.navBar ::highlight{
+    color: plum;
+
+}
