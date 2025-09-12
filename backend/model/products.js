@@ -18,8 +18,11 @@ const products = [
   { id: 5, name: "Creed Aventus" }
 ];
 
+/*
 Product.insertMany(products)
   .then(() => console.log("Products inserted"))
   .catch((err) => console.error(err));
+  
+*/
 
 export default products;

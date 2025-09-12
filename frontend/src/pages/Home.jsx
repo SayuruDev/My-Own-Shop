@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { Row, Col } from 'react-bootstrap';
 import axios from "axios";
+import Product from "../components/Product.jsx"
 
 function Home() {
   const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -22,11 +23,13 @@ function Home() {
   return (
     <div>
       <h1>Our Products</h1>
-      <ul>
+      <Row>
         {products.map((product) => (
-          <li key={product.id}>{product.name}</li>
+          <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
+            <Product product={product} />
+          </Col>
         ))}
-      </ul>
+      </Row>
     </div>
   );
 }
